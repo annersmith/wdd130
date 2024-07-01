@@ -1,48 +1,55 @@
-nav{
+nav {
     background-color: steelblue;
     padding: 10px;
 }
-nav a{
+
+nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none; /* Added to remove underline from links */
 }
+
 h1 {
     color: steelblue;
 }
+
 img {
-    width: 150pxx;
+    max-width: 100%; /* Ensure images are responsive */
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+
 main {
     max-width: 840px;
+    margin: 0 auto; /* Center main content */
 }
-p{
-    padding: 0px;
 
+p {
+    padding: 0; /* Changed from padding: 0px; for consistency */
+    margin: 0; /* Added to remove default margin from paragraphs */
 }
-main img {
-    width: 150px;
-    height: auto;
-}
+
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba (0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
+
 aside img {
-    width: 200px;
+    max-width: 100%; /* Ensure images inside aside are responsive */
     height: auto;
 }
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    padding-top: 10px; /* Added to improve spacing */
 }
