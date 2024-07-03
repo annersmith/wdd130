@@ -1,18 +1,24 @@
+/* Universal styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Navigation styles */
 nav {
     background-color: steelblue;
     padding: 10px;
-    text-align: center; /* Center align navigation items */
+    text-align: center;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center navigation items */
+    gap: 20px; /* Ensure even spacing */
 }
 
 nav a {
     color: white;
-    display: inline-block; /* Change to inline-block for horizontal layout */
-    padding: 20px;
+    display: block; /* Convert to block element */
+    padding: 10px 15px;
     text-decoration: none; /* Remove underline from links */
 }
 
@@ -20,10 +26,19 @@ nav a:hover {
     background-color: darkblue; /* Add hover effect for better visibility */
 }
 
-h1 {
-    color: steelblue;
+/* Header, footer, and grid container */
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto; /* Center content */
 }
 
+/* Heading styles */
+h1 {
+    color: steelblue;
+    border-bottom: 2px solid #000; /* Add bottom border */
+}
+
+/* Main image styles */
 main img {
     max-width: 100%; /* Ensure images are responsive */
     height: auto;
@@ -33,16 +48,18 @@ main img {
     float: right;
 }
 
+/* Main container */
 main {
-    max-width: 840px;
     margin: 0 auto; /* Center main content */
 }
 
+/* Paragraph styles */
 p {
     padding: 0; /* Remove default padding from paragraphs */
     margin: 0; /* Remove default margin from paragraphs */
 }
 
+/* Aside styles */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -58,6 +75,7 @@ aside img {
     height: auto;
 }
 
+/* Footer styles */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
@@ -65,7 +83,14 @@ footer {
     padding-top: 10px; /* Improve spacing */
 }
 
-/* Class Selectors */
+/* Grid container */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px; /* Optional: Add spacing between columns */
+}
+
+/* Box class selector */
 .box {
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.1);
