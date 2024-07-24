@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Gravity Adventures Rafting Company</title>
+    <meta name="description" content="Get in touch with Gravity Adventures Rafting Company for inquiries, reservations, or suggestions.">
+    <meta name="author" content="Anne Smith">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 123 Adventure Lane, Rapidsville, RA 12345</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> <a href="mailto:info@raftingcompany.com">info@raftingcompany.com</a></p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.320637540975!2d-122.41129738468426!3d37.774929679758155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f30f479b%3A0x4a2d2a88ffedf2d2!2s123+Main+St%2C+San+Francisco%2C+CA+94105%2C+USA!5e0!3m2!1sen!2s!4v1606102498767!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <section class="team">
+            <h2>Our Team</h2>
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John Doe">
+                    <figcaption>John Doe - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Jane Smith">
+                    <figcaption>Jane Smith - Reservations Specialist</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Michael Johnson">
+                    <figcaption>Michael Johnson - Safety Officer</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="purpose">Purpose of Contact:</label>
+                <div>
+                    <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                    <label for="general-inquiry">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
+                    <label for="reservation-question">Reservation Question</label>
+                </div>
+                <div>
+                    <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+                    <label for="website-suggestion">Website Suggestion</label>
+                </div>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gravity Adventures Rafting Company. All rights reserved. Anne Smith</p>
+        <a href="https://www.facebook.com"><img src="images/facebook-icon.png" alt="Facebook Icon"></a>
+        <a href="https://www.twitter.com"><img src="images/twitter-icon.png" alt="Twitter Icon"></a>
+        <a href="https://www.instagram.com"><img src="images/instagram-icon.png" alt="Instagram Icon"></a>
+    </footer>
+</body>
+</html>
